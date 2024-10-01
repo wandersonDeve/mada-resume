@@ -1,0 +1,284 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #e7ffe9; /* Cor de fundo verde do WhatsApp */
+  color: #333;
+}
+
+header {
+  background-color: #25d366; /* Verde do WhatsApp */
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #128c7e; /* Um pouco mais escuro para contraste */
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.cta {
+  margin-top: 20px;
+}
+
+.cta p {
+  font-size: 1.2em;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #ff0000;
+  margin-left: 10px;
+}
+
+button {
+  background-color: #ffc107; /* Cor do botão */
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffca28; /* Cor mais clara ao passar o mouse */
+}
+
+section {
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  text-align: center;
+  color: #25d366; /* Verde do WhatsApp */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.material-icons {
+  margin-right: 10px;
+  color: #25d366; /* Cor dos ícones */
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #25d366; /* Verde do WhatsApp */
+  color: #fff;
+  border-top: 4px solid #128c7e; /* Um pouco mais escuro para contraste */
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.benefits {
+  text-align: center; /* Centraliza o texto da seção */
+  padding: 40px 20px;
+}
+
+.card-container {
+  display: flex; /* Usando flexbox para organizar os cards */
+  justify-content: center; /* Centraliza os cards na linha */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.card {
+  background-color: #fff; /* Cor de fundo do card */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para o efeito de elevação */
+  width: 200px; /* Largura fixa dos cards */
+  text-align: center; /* Centraliza o texto dentro do card */
+}
+
+.card h4 {
+  margin: 15px 0 5px; /* Margens para o título do card */
+  color: #25d366; /* Cor do título */
+}
+
+.card p {
+  color: #666; /* Cor do texto do parágrafo */
+  font-size: 0.9em; /* Tamanho da fonte do texto */
+}
+
+.material-icons {
+  font-size: 40px; /* Tamanho dos ícones */
+  color: #25d366; /* Cor dos ícones */
+}
+
+.special-offer {
+  text-align: center; /* Centraliza o texto da seção */
+  padding: 40px 20px;
+  background-color: #f9f9f9; /* Cor de fundo leve para destacar a seção */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+}
+
+.price-container {
+  margin: 20px 0; /* Espaçamento vertical */
+}
+
+.old-price {
+  text-decoration: line-through; /* Risco no preço antigo */
+  color: #ff0000; /* Cor cinza para o preço antigo */
+  font-size: 1.2em; /* Tamanho da fonte do preço antigo */
+}
+
+.current-price {
+  color: #2b00ff; /* Cor vermelha para o preço atual */
+  font-size: 2em; /* Tamanho da fonte do preço atual */
+  font-weight: bold; /* Destaca o preço atual */
+}
+
+.cta-button {
+  display: inline-block; /* Para que o botão tenha dimensões */
+  margin-top: 15px; /* Espaçamento acima do botão */
+  padding: 12px 20px; /* Espaçamento interno do botão */
+  background-color: #25d366; /* Cor do botão */
+  color: #fff; /* Cor do texto do botão */
+  text-decoration: none; /* Remove o sublinhado do link */
+  border-radius: 5px; /* Bordas arredondadas do botão */
+  font-size: 1.2em; /* Tamanho da fonte do botão */
+  transition: background-color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.cta-button:hover {
+  background-color: #1e8e58; /* Cor do botão ao passar o mouse */
+}
+
+.timer {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 30px;
+}
+.timer span {
+  font-weight: bold;
+  color: #d32f2f;
+}
+
+.satisfaction-guarantee {
+  text-align: center; /* Centraliza o texto da seção */
+  padding: 40px 20px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo leve */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+}
+
+.satisfaction-guarantee h3 {
+  color: #25d366; /* Cor do título */
+  margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.satisfaction-guarantee p {
+  color: #333; /* Cor do texto */
+  font-size: 1.1em; /* Tamanho da fonte do texto */
+  line-height: 1.5; /* Altura da linha para melhor legibilidade */
+}
+
+.testimonials {
+  text-align: center; /* Centraliza o texto da seção */
+  padding: 40px 20px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo leve */
+}
+
+.testimonial-container {
+  display: flex; /* Usando flexbox para organizar os cards */
+  justify-content: center; /* Centraliza os cards na linha */
+  flex-wrap: wrap; /* Permite que os cards quebrem linha se necessário */
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+.testimonial-card {
+  background-color: #fff; /* Cor de fundo do card */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 20px; /* Espaçamento interno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+  width: 300px; /* Largura fixa dos cards */
+  text-align: left; /* Alinha o texto à esquerda dentro do card */
+}
+
+.testimonial-card p {
+  font-style: italic; /* Texto em itálico para o depoimento */
+  color: #555; /* Cor do texto do depoimento */
+  margin: 0 0 10px; /* Margens para o texto */
+}
+
+.testimonial-card span {
+  display: block; /* Faz com que o nome do usuário fique em uma nova linha */
+  font-weight: bold; /* Destaque para o nome do usuário */
+  color: #25d366; /* Cor do nome do usuário */
+}
+
+.how-it-works {
+  text-align: center; /* Centraliza o texto da seção */
+  padding: 40px 20px; /* Espaçamento interno */
+  background-color: #f9f9f9; /* Cor de fundo leve */
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Espaço entre os passos */
+    margin-top: 20px;
+}
+
+.step {
+    opacity: 0; /* Inicia invisível */
+    transform: translateY(20px); /* Move para baixo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animação */
+    width: 80%; /* Largura do card */
+    max-width: 400px; /* Largura máxima do card */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.step.visible {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Restaura a posição original */
+}

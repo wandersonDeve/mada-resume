@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mada Resume - Resumidor de Conversas</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Chega de perder tempo rolando mensagens no WhatsApp!</h1>
+      <h2>Resumos instantâneos das conversas mais importantes do seu grupo.</h2>
+    </header>
+
+    <section class="hero">
+        <div class="cta">
+            <h3>Chegou o Mada Resume!</h3>
+            <p>A Mada Resume é a solução perfeita para quem quer otimizar o tempo lendo todas as mensagens passadas do grupo e não perder informações importantes. Com apenas um clique, você pode adicionar nossa inteligência artificial ao seu grupo de WhatsApp e receber resumos organizados das conversas mais relevantes. É simples, rápido e eficaz!</p>
+            <img src="./images/cellphone_mockup.png" alt="Mockup do celular com WhatsApp" />
+            <p>
+                Comece Agora Por Apenas <strong>R$80/Grupo</strong>
+                <span class="original-price">R$150</span>
+            </p>
+            <button>Preço Promocional Por Tempo Limitado!</button>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <p class="group-types">A Mada Resume é a solução perfeita para todos os tipos de grupos! Seja em grupos escolares, de jogos, de família ou em qualquer outro contexto, a Mada ajuda você a manter-se atualizado de forma prática e eficiente.</p>
+      <h3>O que nossos usuários dizem:</h3>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <p>
+            "Agora eu consigo acompanhar tudo o que aconteceu no grupo em 2
+            minutos!"
+          </p>
+          <span>— Felipe Raposo</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"A Mada Resume me salvou de perder informações importantes."</p>
+          <span>— Paulo Ricardo</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <h3>Por Que Usar o Mada Resume?</h3>
+      <div class="card-container">
+        <div class="card">
+          <span class="material-icons">timer</span>
+          <h4>Economize Tempo</h4>
+          <p>Não precisa mais perder tempo lendo dezenas de mensagens.</p>
+        </div>
+        <div class="card">
+          <span class="material-icons">sort</span>
+          <h4>Organização Inteligente</h4>
+          <p>Os tópicos mais discutidos e importantes em um só lugar.</p>
+        </div>
+        <div class="card">
+          <span class="material-icons">check_circle</span>
+          <h4>Simples de Usar</h4>
+          <p>Adicione nossa IA ao grupo e pronto!</p>
+        </div>
+        <div class="card">
+          <span class="material-icons">group</span>
+          <h4>Perfeito para Grupos Grandes</h4>
+          <p>Ideal para grupos com grande volume de mensagens diárias.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+        <h3>Como Funciona?</h3>
+        <div class="steps">
+            <div class="step" id="step1">
+                <p>1. Adicione nosso número ao grupo de WhatsApp.</p>
+            </div>
+            <div class="step" id="step2">
+                <p>2. Nossa IA vai analisar e resumir automaticamente as mensagens.</p>
+            </div>
+            <div class="step" id="step3">
+                <p>3. Receba um resumo organizado por tópicos das conversas principais duas vezes por dia.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="special-offer">
+      <h3>Oferta Especial!</h3>
+      <div class="price-container">
+        <span class="old-price">Preço normal: R$150,00 por grupo</span>
+        <span class="current-price">Preço hoje: R$80,00 por grupo!</span>
+      </div>
+      <p class="timer">
+        Oferta válida apenas pelas próximas
+        <span id="countdown">24:00:00</span> horas!
+      </p>
+      <a href="#" class="cta-button">Aproveitar Desconto Agora</a>
+    </section>
+
+    <script>
+        function startCountdown() {
+          const countdownElement = document.getElementById("countdown");
+          const countdownDuration = 24 * 60 * 60; // 24 horas em segundos
+          let timeLeft;
+      
+          // Verifica se o tempo restante já está armazenado
+          const storedTime = localStorage.getItem("timeLeft");
+          if (storedTime) {
+            timeLeft = parseInt(storedTime, 10);
+          } else {
+            timeLeft = countdownDuration; // Inicializa com 24 horas se não houver tempo armazenado
+            localStorage.setItem("timeLeft", timeLeft); // Armazena o tempo inicial
+          }
+      
+          const interval = setInterval(function () {
+            var hours = Math.floor(timeLeft / 3600);
+            var minutes = Math.floor((timeLeft % 3600) / 60);
+            var seconds = timeLeft % 60;
+      
+            countdownElement.textContent =
+              (hours < 10 ? "0" : "") +
+              hours +
+              ":" +
+              (minutes < 10 ? "0" : "") +
+              minutes +
+              ":" +
+              (seconds < 10 ? "0" : "") +
+              seconds;
+      
+            timeLeft--;
+      
+            // Atualiza o tempo restante no localStorage
+            localStorage.setItem("timeLeft", timeLeft);
+      
+            if (timeLeft < 0) {
+              clearInterval(interval);
+              countdownElement.textContent = "00:00:00";
+              localStorage.removeItem("timeLeft"); // Remove o item do localStorage quando o tempo expira
+            }
+          }, 1000);
+        }
+      
+        window.onload = startCountdown;
+      </script>
+
+    <section class="numbers">
+      <h3>Números Que Falam!</h3>
+      <div class="card-container">
+        <div class="card">
+          <span class="material-icons">group</span>
+          <h4>Mais de 500 grupos</h4>
+          <p>Já estão usando o Mada Resume.</p>
+        </div>
+        <div class="card">
+          <span class="material-icons">schedule</span>
+          <h4>Economia de até 90%</h4>
+          <p>Do tempo que seria gasto lendo mensagens.</p>
+        </div>
+        <div class="card">
+          <span class="material-icons">description</span>
+          <h4>Resumos Diários</h4>
+          <p>Em grupos com até 1000 mensagens por dia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="satisfaction-guarantee">
+      <h3>Garantia de Satisfação!</h3>
+      <p>
+        Se você não estiver satisfeito após 7 dias de uso, devolvemos seu
+        dinheiro. Simples assim!
+      </p>
+    </section>
+
+    <footer>
+      <p>
+        <a href="#">Termos de Uso</a> |
+        <a href="#">Política de Privacidade</a>
+      </p>
+      <p>
+        Contato: <a href="mailto:contato@madalabs.com">contato@madalabs.com</a>
+      </p>
+      <p>Pagamento Seguro | Garantia de Satisfação</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const steps = document.querySelectorAll(".step");
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+              }
+            });
+          },
+          {
+            threshold: 0.1, // Ativa a animação quando 10% do card está visível
+          }
+        );
+
+        steps.forEach((step) => {
+          observer.observe(step); // Observa cada passo
+        });
+      });
+    </script>
+  </body>
+</html>
