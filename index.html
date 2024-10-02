@@ -25,7 +25,7 @@
               Comece Agora Por Apenas <strong>R$80/Grupo</strong>
               <span class="original-price">R$150</span>
           </p>
-          <a href="https://pay.hotmart.com/G95804385W?off=7z46nhqf" target="_blank">
+          <a href="https://pay.hotmart.com/E95805468C" target="_blank">
               <button>Preço Promocional Por Tempo Limitado!</button>
           </a>
       </div>
@@ -102,22 +102,21 @@
         Oferta válida apenas pelas próximas
         <span id="countdown">24:00:00</span> horas!
       </p>
-      <a href="https://pay.hotmart.com/G95804385W?off=7z46nhqf" class="cta-button">Aproveitar Desconto Agora</a>
+      <a href="https://pay.hotmart.com/E95805468C" class="cta-button">Aproveitar Desconto Agora</a>
     </section>
 
     <script>
         function startCountdown() {
           const countdownElement = document.getElementById("countdown");
-          const countdownDuration = 24 * 60 * 60; // 24 horas em segundos
+          const countdownDuration = 24 * 60 * 60;
           let timeLeft;
       
-          // Verifica se o tempo restante já está armazenado
           const storedTime = localStorage.getItem("timeLeft");
           if (storedTime) {
             timeLeft = parseInt(storedTime, 10);
           } else {
-            timeLeft = countdownDuration; // Inicializa com 24 horas se não houver tempo armazenado
-            localStorage.setItem("timeLeft", timeLeft); // Armazena o tempo inicial
+            timeLeft = countdownDuration;
+            localStorage.setItem("timeLeft", timeLeft); 
           }
       
           const interval = setInterval(function () {
@@ -137,13 +136,12 @@
       
             timeLeft--;
       
-            // Atualiza o tempo restante no localStorage
             localStorage.setItem("timeLeft", timeLeft);
       
             if (timeLeft < 0) {
               clearInterval(interval);
               countdownElement.textContent = "00:00:00";
-              localStorage.removeItem("timeLeft"); // Remove o item do localStorage quando o tempo expira
+              localStorage.removeItem("timeLeft");
             }
           }, 1000);
         }
@@ -201,12 +199,12 @@
             });
           },
           {
-            threshold: 0.1, // Ativa a animação quando 10% do card está visível
+            threshold: 0.1,
           }
         );
 
         steps.forEach((step) => {
-          observer.observe(step); // Observa cada passo
+          observer.observe(step);
         });
       });
     </script>
